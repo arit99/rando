@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-atmospheric-medical-medical-symbol-gradient-poster-image_202320.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.left-section, .right-section {
+    width: 45%;
+    padding: 20px;
+}
+
+.left-section h2, .right-section h2 {
+    font-size: 26px;
+    color: #008033; /* Changed to dark blue */
+    margin-bottom: 20px;
+}
+
+.left-section p, .right-section p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.profile-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008033; /* Changed to dark blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-form button:hover {
+    background-color: #008033; /* Darker shade of blue on hover */
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
